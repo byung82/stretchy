@@ -111,6 +111,10 @@ module Stretchy
       add_params params, :query, :raw_node
     end
 
+    def order(*list)
+      add_body sort: list
+    end
+
     def filter(params = {})
       add_params params, :filter, :raw_node
     end
